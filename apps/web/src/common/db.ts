@@ -40,11 +40,11 @@ async function initializeDatabase(persistence: DatabasePersistence) {
   }
 
   db.host({
-    API_HOST: "https://api.notesnook.com",
-    AUTH_HOST: "https://auth.streetwriters.co",
-    SSE_HOST: "https://events.streetwriters.co",
-    ISSUES_HOST: "https://issues.streetwriters.co",
-    MONOGRAPH_HOST: "https://monogr.ph",
+    API_HOST: "https://notes-api.bose.dev",
+    AUTH_HOST: "https://notes-auth.bose.dev",
+    SSE_HOST: "https://notes-events.bose.dev",
+    ISSUES_HOST: "https://bose.dev",
+    MONOGRAPH_HOST: "https://notes-public.bose.dev",
     SUBSCRIPTIONS_HOST: "https://subscriptions.streetwriters.co",
     ...Config.get("serverUrls", {})
   });
